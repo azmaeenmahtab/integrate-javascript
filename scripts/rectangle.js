@@ -10,4 +10,6 @@ function areaRectangle() {
 
 
     document.getElementById('display-area-rectangle').innerText = 'Area of rectangle is = ' + Math.abs(area) + ' ' + 'cm²'
+
+    console.log(area)
 }
