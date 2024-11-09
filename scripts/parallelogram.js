@@ -7,7 +7,7 @@ function areaParallelogram() {
 
 
     let area = .5 * para_b * para_h;
-    displayArea('display-area-parallelogram', area)
+    displayAreaPara('display-area-parallelogram', area)
 }
 
 function getInput(elementId) {
@@ -16,6 +16,6 @@ function getInput(elementId) {
     return input;
 }
 
-function displayArea(elementId, area) {
+function displayAreaPara(elementId, area) {
     document.getElementById(elementId).innerText = 'Area of parallelogram is = ' + area + ' cm²';
 }
