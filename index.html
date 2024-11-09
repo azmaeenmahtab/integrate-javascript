@@ -12,6 +12,7 @@
 <body>
     <div class="flex">
         <div class="flex-grow grid grid-cols-3 gap-4">
+            <!-- triangle -->
             <div class="card bg-base-100  shadow-xl max-w-96">
                 <figure>
                     <img src="images/triangle.png" alt="Shoes" />
@@ -33,6 +34,7 @@
                     </div>
                 </div>
             </div>
+            <!-- rectangle -->
             <div class="card bg-base-100  shadow-xl max-w-96">
                 <figure>
                     <img src="images/rectangle.png" alt="Shoes" />
@@ -44,7 +46,7 @@
                         <input type="number" id="input-w" placeholder="w" class="bg-slate-200 w-24 p-2"
                             onkeyup="gettingBaseValue()">
                         <span>cm</span>
-                        <input type="number" id="input_l" placeholder="i" class="bg-slate-200 w-24 p-2">
+                        <input type="number" id="input_l" placeholder="l" class="bg-slate-200 w-24 p-2">
                         <span>cm</span>
                     </div>
                     <div class="card-actions ">
@@ -52,15 +54,24 @@
                     </div>
                 </div>
             </div>
+            <!-- pentagon -->
             <div class="card bg-base-100  shadow-xl max-w-96">
                 <figure>
-                    <img src="images/rectangle.png" alt="Shoes" />
+                    <img src="images/pentagon.png" alt="Shoes" />
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                <div class="card-body text-center">
+                    <h2>Pentagon</h2>
+                    <p>Area (A) =
+                        0.5 X p
+                        X b</p>
+                    <div class="flex gap-5 items-center">
+                        <input type="number" id="input-pentagon-p" placeholder="p" class="bg-slate-200 w-24 p-2">
+                        <span>cm</span>
+                        <input type="number" id="input-pentagon-b" placeholder="b" class="bg-slate-200 w-24 p-2">
+                        <span>cm</span>
+                    </div>
+                    <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="areaPentagon()">calculate</button>
                     </div>
                 </div>
             </div>
@@ -105,10 +116,12 @@
             <h1>Area Calculation</h1>
             <h1 id="display-area-triangle"></h1>
             <h1 id="display-area-rectangle"></h1>
+            <h1 id="display-area-pentagon"></h1>
         </div>
     </div>
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
+    <script src="scripts/pentagon.js"></script>
 </body>
 
 
