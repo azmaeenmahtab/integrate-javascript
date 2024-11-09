@@ -62,8 +62,8 @@
                 <div class="card-body text-center">
                     <h2>Pentagon</h2>
                     <p>Area (A) =
-                        0.5 X p
-                        X b</p>
+                        0.5 * p
+                        * b</p>
                     <div class="flex gap-5 items-center">
                         <input type="number" id="input-pentagon-p" placeholder="p" class="bg-slate-200 w-24 p-2">
                         <span>cm</span>
@@ -75,15 +75,22 @@
                     </div>
                 </div>
             </div>
+            <!-- Parallelogram -->
             <div class="card bg-base-100  shadow-xl max-w-96">
                 <figure>
-                    <img src="images/rectangle.png" alt="Shoes" />
+                    <img src="images/parallelogram.png" alt="Shoes" />
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                <div class="card-body text-center">
+                    <h2>Parallelogram</h2>
+                    <p>Area (A) = b * h</p>
+                    <div class="flex gap-5 items-center">
+                        <input type="number" id="input-parallelogram-b" placeholder="b" class="bg-slate-200 w-24 p-2">
+                        <span>cm</span>
+                        <input type="number" id="input-parallelogram-h" placeholder="h" class="bg-slate-200 w-24 p-2">
+                        <span>cm</span>
+                    </div>
+                    <div class="card-actions ">
+                        <button class="btn btn-primary w-full" onclick="areaParallelogram()">calculate</button>
                     </div>
                 </div>
             </div>
@@ -117,11 +124,13 @@
             <h1 id="display-area-triangle"></h1>
             <h1 id="display-area-rectangle"></h1>
             <h1 id="display-area-pentagon"></h1>
+            <h1 id="display-area-parallelogram"></h1>
         </div>
     </div>
     <script src="scripts/triangle.js"></script>
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/pentagon.js"></script>
+    <script src="scripts/parallelogram.js"></script>
 </body>
 
 

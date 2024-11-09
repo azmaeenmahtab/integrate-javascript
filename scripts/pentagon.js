@@ -18,5 +18,5 @@ function getInput(elementId) {
 }
 
 function displayArea(elementId, area) {
-    document.getElementById(elementId).innerText = 'Area is = ' + area + ' cm²';
+    document.getElementById(elementId).innerText = 'Area of pentagon is = ' + area + ' cm²';
 }
